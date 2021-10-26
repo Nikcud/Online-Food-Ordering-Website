@@ -1,0 +1,30 @@
+
+/* Section Css */
+
+#item-details{
+    border: 1px solid red;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+}
+h1{
+    font-size: 30px;
+}
+
+button{
+    height: 46px;
+    width: 109px;
+    border: 1px solid orange;
+    background-color: orange;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+}

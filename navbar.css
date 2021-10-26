@@ -1,0 +1,64 @@
+
+*{
+    margin: 0px;
+    padding: 0px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Navigation Bar */
+
+
+
+#navbar{
+    position:relative;
+    display: flex;
+    align-items:center;
+    background-color: rgb(59, 55, 55);
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 5px 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display:flex;
+    flex-direction: row;
+
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 15px;
+   
+}
+#navbar ul li a{
+    color:white;
+    text-decoration:none;
+    padding: 7px;
+    border-radius:10px;
+   
+}
+#navbar ul li a:hover{
+    color:orange;
+    background-color:white;
+    text-decoration:none;
+}
+
+.active{  
+    background-color: rgb(255, 190, 71);
+}
+/* and (min-width: 700px)  */
+@media screen and (max-width: 620px) {
+    #navbar ul{
+        flex-direction: column;
+       
+    }
+}
+
+

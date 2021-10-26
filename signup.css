@@ -1,0 +1,151 @@
+section{
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(0,0,0,0.4);
+    animation : run 2s linear 1;
+}
+@keyframes run {
+    0%{
+        transform: translate(160px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+input{
+    width: 215px;
+    height: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 13px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+#gen-label{
+    margin-left: -40px;
+    margin-right: 102px;
+
+}
+
+#gender{
+    width: 20px;
+  
+}
+input[type='radio']{
+   background: red;
+}
+button{
+    width: 180px;
+    height: 39px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#name{
+    margin-left: 60px;
+}
+#email{
+    margin-left: 70px;
+}
+#number{
+    margin-left: 37px;
+}
+#password{
+    margin-left: 80px;
+}
+#cnfrm_password{
+    margin-left: 22px;
+}
+
+::placeholder{
+    text-align: center;
+    color:orange;
+}
+/* (max-width: 950px) */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    section{
+       width:70%;
+       text-align: center;
+       
+    }
+
+    /* #name{
+        margin-left: 6px;
+    }
+    #email{
+        margin-left: 6px;
+    }
+    #number{
+        margin-left: 8px;
+    }
+    #password{
+        margin-left: 10px;
+    }
+    #cnfrm_password{
+        margin-left: 15px;
+    } */
+}
+
+    /* and (min-width: 450px)  */
+@media screen and (min-width: 450px) and (max-width: 599px) {
+    section{
+       width:80%;
+       
+    }
+
+    input{
+        width: 170px;
+    }
+
+    #gen-label{
+        margin-left: -20px;
+        margin-right: 78px;
+    
+    }
+
+
+}
+
+@media screen  and (max-width: 449px) {
+    section{
+        width:62%;
+     }
+     input{
+        width: 160px;
+    }
+    #name{
+        margin-left: 6px;
+    }
+    #email{
+        margin-left: 6px;
+    }
+    #number{
+        margin-left: 8px;
+    }
+    #password{
+        margin-left: 10px;
+    }
+    #cnfrm_password{
+        margin-left: 15px;
+    }
+    
+    #gen-label {
+        margin-left: 103px;
+        margin-right: 119px;
+    }
+   
+
+
+}

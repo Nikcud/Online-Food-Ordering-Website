@@ -1,0 +1,42 @@
+<script src='https://checkout.razorpay.com/v1/checkout.js'>       </script>  
+        <script> 
+             var options = {          
+                 "key": "rzp_test_fFhnp4qYyfUsBf",
+                 "amount": <?php print json_encode($_SESSION['price']*100); ?>,
+                 "currency": "INR",
+                 "name": "Foodyfly",
+                 "description": "Test Transaction",
+                 "image": "https://example.com/your_logo",
+ 
+                 "handler": function (response) {
+                     alert("Payment done Successfully");
+                 },
+                 "prefill": {
+                     "name": <?php print json_encode($_SESSION['username']); ?>,
+                     "email": <?php print json_encode($_SESSION['email']); ?>,
+                     "contact":<?php print json_encode($_SESSION['phone']); ?>
+                 },
+                 "notes": {
+                     "address": "Razorpay Corporate Office"
+                 },
+                 "theme": {
+                     "color": "#3399cc"
+                 }
+             };
+ 
+             var rzp1 = new Razorpay(options); rzp1.on("payment.failed", function (response) {
+                 alert(response.error.code);
+                 alert(response.error.description);
+                 alert(response.error.source);
+                 alert(response.error.step);
+                 alert(response.error.reason);
+                 alert(response.error.metadata.order_id);
+                 alert(response.error.metadata.payment_id);
+             });
+             document.getElementById("rzp-button1").onclick = function (e) {
+                 rzp1.open();
+                 e.preventDefault();
+             }
+         
+        
+       </script>  

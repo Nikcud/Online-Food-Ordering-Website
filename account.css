@@ -1,0 +1,87 @@
+
+#account-details{
+    /* border: 1px solid red; */
+    height: 520px;
+    width: 578px;
+    text-align: center;
+    
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: 3px 3px 3px 3px rgb(163 161 161);
+}
+
+#img{
+    /* border: 1px solid blue; */
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top:20px;
+}
+
+img{
+    width: 185px;
+    height: 185px;
+}
+
+#details{
+    /* border: 1px solid green; */
+    height: 180px;
+    width: 350px;
+    margin: auto;
+    /* margin-top: 10px; */
+    line-height: 45px;
+}
+
+/* #name{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#sp-name{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#email{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#sp-email{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#gender{
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#sp-gender{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#phone{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#sp-phone{
+    margin-right: 10px;
+    margin-left: 10px;
+} */
+
+
+@media screen and (min-width: 550px) and (max-width: 650px) {
+    #account-details{
+        /* border: 1px solid red; */
+        height: 470px;
+        width: 440px;
+    }
+}
+/* and (min-width: 550px) */
+@media screen  and (max-width: 549px) {
+    #account-details{
+        /* border: 1px solid red; */
+        height: 465px;
+        width: 355px;
+    }
+}

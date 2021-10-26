@@ -1,0 +1,70 @@
+section{
+    text-align: center;
+    color: white;
+    background-color: rgb(0,0,0,0.4);
+    width: 45%;
+    margin: auto;
+    padding:15px;
+}
+
+input{
+    width: 215px;
+    height: 15px;
+    outline: none;
+    padding: 10px;
+    margin: 13px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background-color: transparent;
+    color:white;
+    border:1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#name{
+    margin-left: 62px;
+}
+
+#password{
+    margin-left: 80px;
+}
+::placeholder{
+    text-align: center;
+    color:orange;
+}
+
+@media screen and (min-width: 680px) and (max-width: 1000px) {
+    section{
+       width:60%; 
+    }
+    input{
+        width: 160px;
+    }
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 679px) {
+    section{
+       width:70%; 
+    }
+    input{
+        width: 180px;
+    }
+    #name{
+        margin-left: 18px;
+    }
+    
+    #password{
+        margin-left: 30px;
+    }
+}

@@ -1,0 +1,196 @@
+form{
+    /* border: 1px solid red; */
+    width: 55%;
+    margin:auto;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px rgb(163 161 161);
+
+}
+
+section{
+    margin-top: 15px;
+}
+
+h2{
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+}
+.details-div{
+    display: flex;
+    flex-direction: row;
+       /* align-content: center; */
+   justify-content: center;
+   /* align-items: center; */
+   padding: 10px;
+}
+
+.details-content{
+    margin: 10px;
+}
+
+#rzp-button1{
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+}
+#rzp-button1:hover{
+    transform: scale(1.15);
+}
+
+#username{
+    margin-left: -5px;
+    margin-right: 32px;
+}
+
+#email{
+    margin-right: 68px;
+    margin-left: 0px;
+}
+#country{
+    margin-right: 52px;
+    margin-left: -3px
+}
+#city{
+    margin-right: 75px;
+    margin-left: 2px;
+}
+
+#gender{
+    margin-left: 30px;
+    margin-right: 25px
+}
+
+#phone{
+    margin-left: 35px;
+    margin-right: 28px;
+}
+
+#state{
+    margin-left: 43px;
+    margin-right: 30px;
+}
+
+input{
+    width: 200px;
+    height: 21px;  
+    border: 1px solid black;
+    outline: none;
+    padding: 2px;
+}
+
+select{
+    width: 211px;
+    height: 29px;
+    outline: none;
+}
+
+#pincode{
+    margin-left: 36px;
+    margin-right: 15px;
+}
+
+button{
+    width: 94px;
+    height: 33px;
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#user_address{
+    width: 235px;
+    height: 110px;
+    outline: none;
+    padding: 2px;
+}
+
+
+@media screen and (min-width:944px) and (max-width: 1258px) {
+    form{
+        width: 75%;
+       
+    }
+}
+@media screen and (min-width: 410px) and (max-width: 943px) {
+    form{
+        width: 85%;
+       
+    }
+    .details-div{
+        flex-direction: column;
+       
+    }
+    #username{
+        margin-left: -5px;
+        margin-right: 32px;
+    }
+    
+    #email{
+        margin-right: 68px;
+        margin-left: 0px;
+    }
+    #country{
+        margin-right: 52px;
+        margin-left: -3px;
+    }
+    #city{
+        margin-right: 80px;
+        margin-left: 1px;
+    }
+    
+    #gender{
+        margin-left: -2px;
+        margin-right: 56px;
+    }
+    
+    #phone{
+        margin-left: 0px;
+        margin-right: 62px;
+    }
+    
+    #state{
+        margin-left: 0px;
+        margin-right: 71px;
+    }
+
+    #pincode{
+        margin-left: 3px;
+        margin-right: 45px;
+    
+    }
+    input{
+        width: 175px;
+    }
+    select{
+        width: 185px;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    form{
+        text-align: center;
+        justify-content: center;
+        width: 75%;
+       
+    }
+    label{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .details-div{
+        flex-direction: column;
+       
+    }
+    input{
+        width: 150px;
+    }
+    select{
+        width: 150px;
+    }
+}

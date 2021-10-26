@@ -1,0 +1,100 @@
+#add-to-cart{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px 3px rgb(163 161 161);
+    transition: all 0.5s ease;
+}
+#add-to-cart:hover{
+    transform: scale(1.05);
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.dish-name{
+    margin-left:20px;
+}
+
+#item-details{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+form{
+    margin-left:auto;
+    margin-right: 25px;
+}
+
+#total{
+    text-align: center;
+    font-weight: bold;
+}
+
+#remove{
+    border: 1px solid red;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    background: red;
+    color: white;
+}
+
+#mk-payment{
+text-align: center;
+}
+
+#payment{
+    width: 124px;
+    border-radius: 12px;
+    height: 40px;
+    border: none;
+    color: white;
+    outline: none;
+    background-color: #473fff;
+    font-size: 14px;
+    cursor: pointer;  
+    transition: all 0.5s ease;
+}
+#payment:hover{
+    transform: scale(1.15);
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    #add-to-cart{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 410px) and (max-width: 599px) {
+    #add-to-cart{
+        width: 70%;
+    }
+}
+
+@media screen  and (max-width: 409px) {
+    #add-to-cart{
+        width: 70%;
+       flex-direction: column;
+       text-align: center;
+    }
+    form{
+        margin:auto;
+    }
+}
